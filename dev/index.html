@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<title> Uncle Sam's Health Foods Administrative Portal</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Uncle Sam's Health Foods Administrative Portal">
+		<script type="text/javascript" src="index.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		
+		<!-- Google API for Data Visualization -->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script>
+			google.charts.load('current', {packages: ['corechart']});
+			google.charts.setOnLoadCallback(drawChart_index);
+		</script>
+		<!-- Customized css -->
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		
+		<!-- Optional JavaScript -->
+   	 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- BANNER -->
+		<a id="lnkheader" href="index.html">
+			<div class="page-header">
+				<h1> Uncle Sam's Health Foods</h1>
+				<h2>Administrative Portal</h2>
+			</div>
+		</a>
+		
+		<!-- NAVIGATION BAR -->
+  		<nav class="navbar navbar-expand-lg navbar-light bg-light" align="center">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    <ul class="navbar-nav mx-auto">
+		      <li class="nav-item ml-5">
+		        <a class="nav-link" href="index.html">Dashboard<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item ml-5">
+		        <a class="nav-link" href="newSubscriber.html">In-Store Checkout</a>
+		      </li>
+		      <li class="nav-item ml-5">
+		        <a class="nav-link" href="massEmail.html">Send Mass Email</a>
+		      </li>
+		      <li class="nav-item ml-5">
+		        <a class="nav-link" href="massText.html">Send Mass Text</a>
+		      </li>
+		      <li class="nav-item dropdown ml-5">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Customer Analytics
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="cartItems.html">Cart Items</a>
+		          <a class="dropdown-item" href="onlineCustomers.html">Online Customers</a>
+		          <a class="dropdown-item" href="searchTerms.html">Search Terms</a>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		
+		<!-- ALERTS -->
+		<h2 class="heading">Alerts</h2>
+		<ul class="list-group">
+		  <li id="alert1" class="list-group-item d-flex justify-content-between align-items-center">
+		    Example Alert 1
+		    <input type="checkbox" onclick='handleClick("#alert1");'>
+		  </li>
+		  <li id="alert2" class="list-group-item d-flex justify-content-between align-items-center">
+		    Example Alert 2
+		    <span><input type="checkbox" onclick='handleClick("#alert2");' ></span>
+		  </li>
+		  <li id="alert3" class="list-group-item d-flex justify-content-between align-items-center">
+		    Example Alert 3
+		    <span><input type="checkbox" onclick='handleClick("#alert3");' ></span>
+		  </li>
+		</ul>
+		
+		<!-- DASHBOARD SQUARES -->
+		<h2 class="heading">Customer Analytics</h2>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<div class="square">
+						<h3>Top 5 Search Terms Today</h3>
+						<div id="square1Graph"></div>
+						<p><a href="searchTerms.html" class="btlink">See more details</a></p>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="square">
+						<h3>Top Items Added to Carts Today</h3>
+						<div id="square3Graph"></div>
+						<p><a href="cartItems.html" class="btlink">See more details</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-6">
+					<div class="square">
+						<h3>What's Running Low on Stock</h3>
+						<ul class = "list-group">
+							<li class="list-group-item justify-content-between">
+    							Ligatend
+								<span class="stock">1 in stock</span>
+  							</li>
+  							<li class="list-group-item justify-content-between">
+    							Cardio Factors
+								<span class="stock">1 in stock</span>
+  							</li>
+  							<li class="list-group-item justify-content-between">
+    							Sinus Blaster
+								<span class="stock">2 in stock </span>
+  							</li>
+  							<li class="list-group-item justify-content-between">
+    							COUNTRY LIFE Taurine Caps (500mg)
+								<span class="stock">3 in stock</span>
+  							</li>
+  							<li class="list-group-item justify-content-between">
+    							PURE ESSENCE LABS Vision 60 tabs
+								<span class="stock">3 in stock</span>
+  							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="square">
+						<h3>Online Customers</h3>
+						<div id="square4Graph" style="width: 300px; height: 325px;"></div>
+						<p><a href="onlineCustomers.html" class="btlink">See more details</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
