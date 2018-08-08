@@ -1,0 +1,96 @@
+.page-header {
+    background-color: #43a047;
+    padding: 20px;
+    text-align: center;
+    color: #ccffcc;
+}
+.list-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    color: #43a047;
+}
+.square {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 20px;
+    padding: 30px;
+}
+
+#square4Graph {
+    margin: 0 auto;
+}
+.stock {
+    float: right;
+    clear: left;
+    color: red;
+    font-weight: bold;
+}
+
+.btlink {
+    float: right;
+    color: black;
+}
+
+#lnkheader:hover {
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
+#added{
+    border-right-width: 2px;
+    border-right-color: black;
+    border-right-style: solid;
+    padding: 20px;
+}
+
+.subhead2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.total {
+    font-size: 2.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    margin: 10px;
+}
+.new {
+    margin-bottom: 20px;
+}
+
+#second {
+    margin-top: 30px;
+}
+
+.subhead-sm {
+    font-size: 1.5em;
+    text-align: center;
+}
+#lefthalf{
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+
+#needsspaceabove {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#custChart {
+    margin-bottom: 30px;
+}

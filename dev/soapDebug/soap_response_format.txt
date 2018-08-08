@@ -1,0 +1,23 @@
+
+"customerCustomerList":
+array(178) { 
+
+	[0]=> object(stdClass)#2 (12) { ["customer_id"]=> int(1) ["created_at"]=> string(19) "2009-08-19 11:59:26" ["updated_at"]=> string(19) "2009-08-19 11:59:27" ["increment_id"]=> string(9) "000000001" ["store_id"]=> int(1) ["website_id"]=> int(1) ["created_in"]=> string(7) "English" ["email"]=> string(11) "wasp@tm.com" ["firstname"]=> string(4) "wasp" ["lastname"]=> string(4) "wasp" ["group_id"]=> int(1) ["password_hash"]=> string(35) "c266825a32bc956f76a72678aeb0e474:6n" } 
+
+	[1]=> object(stdClass)#3 (12) { ["customer_id"]=> int(2) 
+	["created_at"]=> string(19) "2010-12-24 23:03:31" 
+	["updated_at"]=> string(19) "2010-12-24 23:03:32" 
+	["increment_id"]=> string(0) "" 
+	["store_id"]=> int(1) 
+	["website_id"]=> int(1) 
+	["created_in"]=> string(7) "English" 
+	["email"]=> string(18) "isapir10@gmail.com" 
+	["firstname"]=> string(3) "Isa" 
+	["lastname"]=> string(7) "Pirzada" 
+	["group_id"]=> int(1) 
+	["password_hash"]=> string(35) "0cb9931f1c012edd97916b5b4059ed2e:YC" }
+
+	[...]
+
+}
+
