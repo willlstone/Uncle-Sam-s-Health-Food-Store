@@ -1,0 +1,28 @@
+[17-Nov-2017 20:28:03 UTC] PHP Fatal error:  Uncaught SoapFault exception: [102] Customer not exists. in /home/ubuntu/workspace/dev/php/test.php:77
+Stack trace:
+#0 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->__call('customerCustome...', Array)
+#1 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->customerCustomerDelete('2e787e18b9115ef...', NULL)
+#2 /home/ubuntu/workspace/dev/php/test.php(25): removeUser()
+#3 {main}
+  thrown in /home/ubuntu/workspace/dev/php/test.php on line 77
+[17-Nov-2017 20:28:34 UTC] PHP Fatal error:  Uncaught SoapFault exception: [102] Customer not exists. in /home/ubuntu/workspace/dev/php/test.php:77
+Stack trace:
+#0 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->__call('customerCustome...', Array)
+#1 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->customerCustomerDelete('6de769ce4c3def5...', '')
+#2 /home/ubuntu/workspace/dev/php/test.php(25): removeUser()
+#3 {main}
+  thrown in /home/ubuntu/workspace/dev/php/test.php on line 77
+[17-Nov-2017 20:29:30 UTC] PHP Fatal error:  Uncaught SoapFault exception: [102] Customer not exists. in /home/ubuntu/workspace/dev/php/test.php:77
+Stack trace:
+#0 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->__call('customerCustome...', Array)
+#1 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->customerCustomerDelete('bd07cb9c2031994...', '')
+#2 /home/ubuntu/workspace/dev/php/test.php(25): removeUser()
+#3 {main}
+  thrown in /home/ubuntu/workspace/dev/php/test.php on line 77
+[17-Nov-2017 20:30:44 UTC] PHP Fatal error:  Uncaught SoapFault exception: [102] Customer not exists. in /home/ubuntu/workspace/dev/php/test.php:77
+Stack trace:
+#0 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->__call('customerCustome...', Array)
+#1 /home/ubuntu/workspace/dev/php/test.php(77): SoapClient->customerCustomerDelete('d0aa78e424ab2e2...', NULL)
+#2 /home/ubuntu/workspace/dev/php/test.php(25): removeUser()
+#3 {main}
+  thrown in /home/ubuntu/workspace/dev/php/test.php on line 77
